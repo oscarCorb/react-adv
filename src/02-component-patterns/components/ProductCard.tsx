@@ -1,5 +1,4 @@
 import { createContext } from 'react';
-import { ProductButtons, ProductImage, ProductTitle } from '../components';
 import { useProducts } from '../hooks/useProducts';
 import {
   ProductCardProps,
@@ -21,7 +20,3 @@ export const ProductCard = ({ children, product }: ProductCardProps) => {
     </Provider>
   );
 };
-
-ProductCard.Title = ProductTitle;
-ProductCard.Image = ProductImage;
-ProductCard.Buttons = ProductButtons;
